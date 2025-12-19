@@ -1,26 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <title>Projects | Timothy Marshall</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="css/style.css">
-</head>
 <body>
-  <h1>Projects</h1>
+  <header class="site">
+    <nav class="nav">
+      <a class="brand" href="./">TM</a>
+      <div class="navlinks">
+        <a class="active" href="projects.html">Projects</a>
+        <a href="resume.pdf">Resume</a>
+        <a href="https://github.com/marshallt6" target="_blank" rel="noreferrer">GitHub</a>
+        <a href="https://linkedin.com/in/yourprofile" target="_blank" rel="noreferrer">LinkedIn</a>
+      </div>
+    </nav>
+  </header>
 
-  <ul>
-    <li>
-      <a href="#">Embedded Controller Project</a> — CAN, C/C++, MCU
-    </li>
-    <li>
-      <a href="#">Automotive Diagnostics Project</a> — Vehicle systems
-    </li>
-    <li>
-      <a href="#">Robotics Platform</a> — Sensors, controls
-    </li>
-  </ul>
+  <main class="container">
+    <section class="card">
+      <h1>Projects</h1>
+      <p class="summary">A curated set of builds that show real design, debugging, and validation work.</p>
 
-  <p><a href="index.html">Back to home</a></p>
+      <div class="grid">
+        <article class="card project">
+          <h2>CAN-Based Diagnostic Tool</h2>
+          <p>ECU comms, message parsing, bench + vehicle testing, debugging notes.</p>
+          <a class="textlink" href="#">Case study →</a>
+        </article>
+
+        <article class="card project">
+          <h2>Embedded Sensor Controller</h2>
+          <p>MCU firmware, sensor integration, timing issues, and fixes.</p>
+          <a class="textlink" href="#">Case study →</a>
+        </article>
+
+        <article class="card project">
+          <h2>Robotics Platform</h2>
+          <p>System integration: power, control, sensing, software architecture.</p>
+          <a class="textlink" href="#">Case study →</a>
+        </article>
+      </div>
+
+      <p style="margin-top: 18px;">
+        <a class="textlink" href="./">← Back home</a>
+      </p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <span>© <span id="y"></span> Timothy Marshall</span>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+  </script>
 </body>
+
 </html>
