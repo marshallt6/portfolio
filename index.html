@@ -8,12 +8,12 @@
 </head>
   
 
+
 <body>
   <header class="site">
     <nav class="nav">
       <a class="brand" href="./">TM</a>
       <div class="navlinks">
-        <a class="active" href="./">Home</a>
         <a href="projects.html">Projects</a>
         <a href="resume.pdf">Resume</a>
         <a href="https://github.com/marshallt6" target="_blank" rel="noreferrer">GitHub</a>
@@ -23,84 +23,47 @@
   </header>
 
   <main class="container">
-    <section class="card hero">
-      <div class="hero-grid">
-        <div>
-          <h1>Timothy Marshall</h1>
-          <p class="tagline">Electrical Engineer • Embedded Systems • Automotive & Robotics</p>
-          <p class="summary">
-            I’m an electrical engineer with hands-on experience in embedded systems, automotive electronics,
-            and physical system integration. I focus on designing, debugging, and validating real hardware
-            — from microcontroller firmware to vehicle-level systems.
-          </p>
-          <div class="cta">
-            <a class="button primary" href="projects.html">View Projects</a>
-            <a class="button" href="resume.pdf">Download Resume</a>
-          </div>
-        </div>
-
-        <aside class="card facts">
-          <h2>Quick facts</h2>
-          <div class="pills">
-            <span class="pill">Embedded C/C++</span>
-            <span class="pill">Python</span>
-            <span class="pill">CAN</span>
-            <span class="pill">Sensors</span>
-            <span class="pill">Controls</span>
-            <span class="pill">Test/Validation</span>
-          </div>
-          <div class="kv">
-            <div><span>Focus</span><strong>Hands-on systems</strong></div>
-            <div><span>Strength</span><strong>Debug & integration</strong></div>
-            <div><span>Portfolio</span><strong>Case studies</strong></div>
-          </div>
-        </aside>
-      </div>
-    </section>
-
-    <section class="card section">
-      <h2>Featured case studies</h2>
+    <section class="hero card">
+      <h1>Timothy Marshall</h1>
+      <p class="tagline">Electrical Engineer • Embedded Systems • Automotive & Robotics</p>
       <p class="summary">
-        Short project write-ups with real photos, block diagrams, tools used, and what broke + how it was fixed.
+        I’m an electrical engineer with hands-on experience in embedded systems, automotive electronics,
+        and physical system integration. I focus on designing, debugging, and validating real hardware
+        — from microcontroller firmware to vehicle-level systems.
       </p>
 
-      <div class="featured">
-        <div class="item">
-          <div>
-            <h3>CAN-Based Diagnostic / Tooling</h3>
-            <p>Vehicle network communication, message handling, bench + vehicle tests, debugging notes.</p>
-            <a class="textlink" href="projects.html">Open →</a>
-          </div>
-          <span class="meta">CAN • Embedded</span>
-        </div>
-
-        <div class="item">
-          <div>
-            <h3>Embedded Sensor Controller</h3>
-            <p>MCU firmware, sensor integration, timing issues, and instrumented debugging.</p>
-            <a class="textlink" href="projects.html">Open →</a>
-          </div>
-          <span class="meta">MCU • Sensors</span>
-        </div>
-
-        <div class="item">
-          <div>
-            <h3>Robotics Platform Integration</h3>
-            <p>Power, sensing, control, and system-level integration across hardware/software.</p>
-            <a class="textlink" href="projects.html">Open →</a>
-          </div>
-          <span class="meta">Systems • Controls</span>
-        </div>
+      <div class="cta">
+        <a class="button primary" href="projects.html">View Projects</a>
+        <a class="button" href="resume.pdf">Download Resume</a>
       </div>
+      <p class="meta">Portfolio: marshallt6.github.io/timothymarshall</p>
+    </section>
+
+    <section class="grid">
+      <article class="card project">
+        <h2>Embedded / Controls</h2>
+        <p>Microcontrollers, sensors, C/C++, Python, real debugging stories.</p>
+        <a class="textlink" href="projects.html">See projects →</a>
+      </article>
+
+      <article class="card project">
+        <h2>Automotive / CAN</h2>
+        <p>Diagnostics, comms, test and validation mindset.</p>
+        <a class="textlink" href="projects.html">See projects →</a>
+      </article>
+
+      <article class="card project">
+        <h2>Robotics / Systems</h2>
+        <p>Integration across software + hardware + physical systems.</p>
+        <a class="textlink" href="projects.html">See projects →</a>
+      </article>
     </section>
   </main>
 
   <footer class="footer">
-    <div class="footer-inner">
+    <div class="container footer-inner">
       <span>© <span id="y"></span> Timothy Marshall</span>
-      <span>•</span>
-      <a class="textlink" href="projects.html">Projects</a>
-      <span>•</span>
+      <span class="sep">•</span>
       <a class="textlink" href="mailto:youremail@example.com">youremail@example.com</a>
     </div>
   </footer>
@@ -109,7 +72,6 @@
     document.getElementById("y").textContent = new Date().getFullYear();
   </script>
 </body>
-
 
 
 
