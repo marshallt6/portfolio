@@ -7,49 +7,55 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
   
-<body class="hmi">
-  <header class="hmi-top">
-    <div class="wrap">
-      <div class="brand">
-        <div class="badge">TM</div>
-        <div>
-          <div class="t">Timothy Marshall</div>
-          <div class="s">Embedded / Automotive Systems</div>
-        </div>
+<body class="tool">
+  <div class="layout">
+    <aside class="side">
+      <div class="logo">TM</div>
+      <div class="who">
+        <div class="name">Timothy Marshall</div>
+        <div class="sub">EE • Embedded • Automotive</div>
       </div>
-      <nav class="hmi-nav">
-        <a href="projects.html">PROJECTS</a>
-        <a href="resume.pdf">RESUME</a>
-        <a href="https://github.com/marshallt6" target="_blank" rel="noreferrer">GITHUB</a>
+
+      <nav class="menu">
+        <a class="active" href="./">Overview</a>
+        <a href="projects.html">Projects</a>
+        <a href="resume.pdf">Resume</a>
+        <a href="https://github.com/marshallt6" target="_blank" rel="noreferrer">GitHub</a>
       </nav>
-    </div>
-  </header>
 
-  <main class="wrap">
-    <section class="dash">
-      <div class="panel big">
-        <div class="hdr">SYSTEM STATUS</div>
-        <div class="val">READY</div>
-        <div class="mut">Build • Debug • Validate • Ship</div>
+      <div class="foot">
+        <div class="tiny">Portfolio</div>
+        <div class="mono">marshallt6.github.io/timothymarshall</div>
       </div>
+    </aside>
 
-      <div class="panel">
-        <div class="hdr">FOCUS</div>
-        <ul>
-          <li>CAN & vehicle networks</li>
-          <li>MCU firmware (C/C++)</li>
-          <li>Test + instrumentation</li>
-        </ul>
-      </div>
+    <main class="main">
+      <section class="panel">
+        <h1>Overview</h1>
+        <p>
+          Hands-on electrical engineer focused on building and debugging real systems:
+          MCU firmware, CAN networks, sensors, controls, and validation setups.
+        </p>
+      </section>
 
-      <div class="panel">
-        <div class="hdr">NEXT</div>
-        <p>Turn projects into short case studies with photos, diagrams, and fixes.</p>
-        <a class="btn" href="projects.html">OPEN PROJECTS →</a>
-      </div>
-    </section>
-  </main>
+      <section class="panel grid">
+        <div class="tile">
+          <div class="k">Embedded</div>
+          <div class="v">C/C++ • Python • MCU</div>
+        </div>
+        <div class="tile">
+          <div class="k">Automotive</div>
+          <div class="v">CAN • Diagnostics • Test</div>
+        </div>
+        <div class="tile">
+          <div class="k">Robotics</div>
+          <div class="v">Integration • Sensors • Controls</div>
+        </div>
+      </section>
+    </main>
+  </div>
 </body>
+
 
 
 </html>
