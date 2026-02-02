@@ -2,15 +2,16 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Project | Timothy Marshall</title>
+  <title>Timothy Marshall | Electrical Engineer</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
   <header class="site">
     <nav class="nav">
-      <a class="brand" href="../">TM</a>
+      <a class="brand" href="./">TM</a>
+
       <div class="navlinks">
         <a href="./index.html">Home</a>
         <a href="./project.html">Projects</a>
@@ -23,136 +24,261 @@
   </header>
 
   <main class="container">
+
+    <!-- HERO -->
     <section class="hero card">
-      <h1>Project Title</h1>
-      <p class="muted">Write-up in progress.</p>
-    </section>
+      <div class="hero-content">
+        <h1>Timothy Marshall</h1>
+        <p class="tagline">Electrical Engineer • Embedded Systems • Automotive & Robotics</p>
 
-      <figure class="card" style="margin-top: 16px;">
-        <img
-          src="../assets/firebird/firebird-current.jpg"
-          alt="Current version of where the Firebird is at."
-          style="width:100%; border-radius: 14px;"
-        >
-        <figcaption class="muted" style="margin-top: 8px;">
-          Current version of where the Firebird is at
-        </figcaption>
-      </figure>
-      
-      <section style="margin-top: 16px;">
-        <h2>Gallery</h2>
-      
-        <div class="grid">
-
-        <article class="card">
-            <img
-              src="../assets/firebird/firebird-enginefirststart.jpg"
-              alt="firebird first start with lt1"
-              style="width:100%; border-radius: 14px;"
-            >
-            <p class="muted" style="margin-top: 8px;">
-              The Firebirds first start with the new v8 motor, camshaft, and custom wiring harness
-            </p>
-          </article>
-
-
-          
-          <article class="card">
-            <img
-              src="../assets/firebird/firebird-lt1.jpg"
-              alt="lt1 engine on stand"
-              style="width:100%; border-radius: 14px;"
-            >
-            <p class="muted" style="margin-top: 8px;">
-              1995 lt1 V8 on engine stand
-            </p>
-          </article>
-      
-          <article class="card">
-            <img
-              src="../assets/firebird/firebird-modifiedtransmount.jpg"
-              alt="modified trans mount"
-              style="width:100%; border-radius: 14px;"
-            >
-            <p class="muted" style="margin-top: 8px;">
-              Modified transmission mount after tube subframe instalation .
-            </p>
-          </article>
-
-          <article class="card">
-            <img
-              src="../assets/firebird/firebird-tubesubframe.jpg"
-              alt="Tube subframe"
-              style="width:100%; border-radius: 14px;"
-            >
-            <p class="muted" style="margin-top: 8px;">
-              Tubeular sub-frame just after install.
-            </p>
-          </article>
-
-             <article class="card">
-            <img
-              src="../assets/firebird/firebird-panhard-rearend.jpg"
-              alt="Install of tubular panhard bar, rear end swap, gas tank delete"
-              style="width:100%; border-radius: 14px;"
-            >
-            <p class="muted" style="margin-top: 8px;">
-              Rear end modifications. Rear end swap, adujstable tubular panhard bar, gas tank delete, new shocks, and brake lines.
-            </p>
-          </article>
-
-
-             <article class="card">
-            <img
-              src="../assets/firebird/firebird-original.jpg"
-              alt="Original version of firebird"
-              style="width:100%; border-radius: 14px;"
-            >
-            <p class="muted" style="margin-top: 8px;">
-              My first car in high school. 1999 Pontiac Firebird v6 with 160,xxx miles
-            </p>
-          </article>
-          
-        </div>
-      </section>
-
-<!--
-          <section style="margin-top: 16px;">
-      <h2>Video Demonstration</h2>
-    
-      <div class="card">
-        <div style="position: relative; padding-top: 56.25%;">
-          <iframe
-            src="https://www.youtube.com/embed/VIDEO_ID"
-            title="SAR system demonstration"
-            style="position: absolute; inset: 0; width: 100%; height: 100%; border: 0; border-radius: 14px;"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen>
-          </iframe>
-        </div>
-    
-        <p class="muted" style="margin-top: 10px;">
-          Demonstration of the SAR platform during testing and validation.
+        <p class="summary">
+          I’m an electrical engineer with hands-on experience in embedded systems,
+          electromechanical systems, and real-world electrical integration.
+          I focus on designing, debugging, and validating hardware with a strong
+          test and documentation mindset.
         </p>
+
+        <div class="cta">
+          <a class="button primary" href="./project.html">View Projects</a>
+          <a class="button" href="./resume-hub.html">Resume Hub</a>
+        </div>
+
+        <p class="meta">
+          Portfolio:
+          <a class="textlink" href="https://marshallt6.github.io/portfolio/" target="_blank" rel="noopener">
+            marshallt6.github.io/portfolio/
+          </a>
+        </p>
+      </div>
+
+      <!-- Rotating project images (clickable) -->
+      <div class="hero-media">
+        <a id="heroSlideLink" class="hero-slide" href="./project.html">
+          <img id="heroSlideImg" alt="Featured project" loading="lazy" />
+          <div class="hero-slide-caption">
+            <span id="heroSlideTitle">Featured project</span>
+            <span class="hero-slide-hint">View →</span>
+          </div>
+        </a>
+
+        <div class="hero-dots" id="heroDots" aria-label="featured projects"></div>
       </div>
     </section>
 
--->
+    <!-- CARDS -->
+    <section class="grid">
+      <article class="card project">
+        <h2>Embedded / Controls</h2>
 
-    
-    <p style="margin-top: 18px;">
-      <a class="textlink" href="../project.html">← Back to Projects</a>
-    </p>
+        <a class="thumb" href="./projects/personal-robotics.html" data-project-page="./projects/personal-robotics.html">
+          <img alt="Embedded / Controls thumbnail" loading="lazy" />
+        </a>
+
+        <p>
+          Encoder-based motor analysis, sensor integration,
+          control logic, and debugging.
+        </p>
+        <a class="textlink" href="./projects/personal-robotics.html">
+          Featured project →
+        </a>
+        <div style="margin-top: 6px;">
+          <a class="textlink" href="./research.html">
+            Related research →
+          </a>
+        </div>
+      </article>
+
+      <article class="card project">
+        <h2>Automotive / Electrical Systems</h2>
+
+        <a class="thumb" href="./projects/kz650-restomod.html" data-project-page="./projects/kz650-restomod.html">
+          <img alt="Automotive / Electrical thumbnail" loading="lazy" />
+        </a>
+
+        <p>
+          Wiring, grounding, integration, and troubleshooting
+          on real vehicles and motorcycles.
+        </p>
+        <a class="textlink" href="./projects/kz650-restomod.html">
+          Featured project →
+        </a>
+        <div style="margin-top: 6px;">
+          <a class="textlink" href="./projects/firebird-lt1.html">
+            In-progress build →
+          </a>
+        </div>
+      </article>
+
+      <article class="card project">
+        <h2>Robotics / Systems</h2>
+
+        <a class="thumb" href="./projects/sar-capstone.html" data-project-page="./projects/sar-capstone.html">
+          <img alt="Robotics / Systems thumbnail" loading="lazy" />
+        </a>
+
+        <p>
+          System integration across sensing, power,
+          control, testing, and documentation.
+        </p>
+        <a class="textlink" href="./projects/sar-capstone.html">
+          Featured project →
+        </a>
+        <div style="margin-top: 6px;">
+          <a class="textlink" href="./project.html">
+            All projects →
+          </a>
+        </div>
+      </article>
+    </section>
+
   </main>
 
   <footer class="footer">
     <div class="container footer-inner">
       <span>© <span id="y"></span> Timothy Marshall</span>
+      <span class="sep">•</span>
+      <a class="textlink" href="mailto:timothy.marshall1546@gmail.com">
+        timothy.marshall1546@gmail.com
+      </a>
     </div>
   </footer>
 
   <script>
+    // year
     document.getElementById("y").textContent = new Date().getFullYear();
+
+    // --- Pull the first <img> from a project page ---
+    async function getFirstImageUrl(projectPageUrl) {
+      try {
+        const res = await fetch(projectPageUrl, { cache: "no-store" });
+        if (!res.ok) return null;
+
+        const html = await res.text();
+        const doc = new DOMParser().parseFromString(html, "text/html");
+
+        // Prefer images inside main content
+        const img =
+          doc.querySelector("main img") ||
+          doc.querySelector(".container img") ||
+          doc.querySelector("img");
+
+        if (!img) return null;
+
+        const src = img.getAttribute("src");
+        if (!src) return null;
+
+        // Resolve relative src against the project page URL
+        return new URL(src, new URL(projectPageUrl, window.location.href)).href;
+      } catch (e) {
+        return null;
+      }
+    }
+
+    // --- Card thumbnails ---
+    async function hydrateCardThumbs() {
+      const thumbs = document.querySelectorAll(".thumb[data-project-page]");
+      for (const a of thumbs) {
+        const page = a.getAttribute("data-project-page");
+        const imgEl = a.querySelector("img");
+        const url = await getFirstImageUrl(page);
+
+        if (url) {
+          imgEl.src = url;
+        } else {
+          // Optional fallback image (add one if you want)
+          // imgEl.src = "./assets/placeholder.jpg";
+          a.style.display = "none";
+        }
+      }
+    }
+
+    // --- Hero rotating slides ---
+    const heroProjects = [
+      { title: "Embedded / Controls", page: "./projects/personal-robotics.html" },
+      { title: "Automotive / Electrical", page: "./projects/kz650-restomod.html" },
+      { title: "Robotics / Systems", page: "./projects/sar-capstone.html" }
+    ];
+
+    let heroSlides = [];
+    let heroIndex = 0;
+    let heroTimer = null;
+
+    function renderHeroDots() {
+      const dots = document.getElementById("heroDots");
+      dots.innerHTML = "";
+      heroSlides.forEach((_, i) => {
+        const b = document.createElement("button");
+        b.type = "button";
+        b.className = "dot" + (i === heroIndex ? " active" : "");
+        b.setAttribute("aria-label", `slide ${i + 1}`);
+        b.addEventListener("click", () => {
+          heroIndex = i;
+          showHeroSlide();
+          restartHeroTimer();
+        });
+        dots.appendChild(b);
+      });
+    }
+
+    function showHeroSlide() {
+      const slide = heroSlides[heroIndex];
+      if (!slide) return;
+
+      document.getElementById("heroSlideTitle").textContent = slide.title;
+
+      const link = document.getElementById("heroSlideLink");
+      const img  = document.getElementById("heroSlideImg");
+
+      link.href = slide.page;
+      img.src = slide.imgUrl;
+
+      [...document.querySelectorAll(".hero-dots .dot")].forEach((d, i) => {
+        d.classList.toggle("active", i === heroIndex);
+      });
+    }
+
+    function startHeroTimer() {
+      heroTimer = setInterval(() => {
+        heroIndex = (heroIndex + 1) % heroSlides.length;
+        showHeroSlide();
+      }, 4500);
+    }
+
+    function restartHeroTimer() {
+      if (heroTimer) clearInterval(heroTimer);
+      startHeroTimer();
+    }
+
+    async function hydrateHeroCarousel() {
+      const slides = [];
+      for (const p of heroProjects) {
+        const imgUrl = await getFirstImageUrl(p.page);
+        if (imgUrl) slides.push({ ...p, imgUrl });
+      }
+
+      if (slides.length === 0) {
+        // Nothing found; hide the media block cleanly
+        const media = document.querySelector(".hero-media");
+        if (media) media.style.display = "none";
+        return;
+      }
+
+      heroSlides = slides;
+      heroIndex = 0;
+
+      renderHeroDots();
+      showHeroSlide();
+      startHeroTimer();
+
+      // Pause on hover
+      const hero = document.querySelector(".hero-media");
+      hero.addEventListener("mouseenter", () => heroTimer && clearInterval(heroTimer));
+      hero.addEventListener("mouseleave", () => startHeroTimer());
+    }
+
+    // go
+    hydrateCardThumbs();
+    hydrateHeroCarousel();
   </script>
 </body>
 </html>
